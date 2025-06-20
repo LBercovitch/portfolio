@@ -3,7 +3,7 @@ This repository will be used to host my web developer portfolio website.
 
 ## Setup Instructions
 
-This project is build using React, Node.js, and Vite and can be set up using the following steps:
+This project is build using React, Tailwind, Node.js, and Vite and can be set up using the following steps:
 - Create a fork of this repository.
 - From your dev environment, clone your forked repo using this command: `git clone Your_Fork_URL`
 - Navigate to the project's directory: `cd portfolio/portfolio`
