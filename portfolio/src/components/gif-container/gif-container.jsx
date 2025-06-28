@@ -16,7 +16,7 @@ function GifContainer({ src, onPlay }) {
           onClick={handlePlay}
         >
           <img
-            src="/PlayButton.png"
+            src={`${import.meta.env.BASE_URL}/PlayButton.png`}
             alt="Play Button"
             className="cursor-pointer"
           />

@@ -32,7 +32,7 @@ function Landing() {
     <>
       <div className="flex justify-center items-center h-dvh bg-lime-200">
         {!slideIn && (
-          <GifContainer src={`/BalloonPop.gif?${Date.now()}`} onPlay={handlePlay} />
+          <GifContainer src={`${import.meta.env.BASE_URL}/BalloonPop.gif?${Date.now()}`} onPlay={handlePlay} />
         )}
       </div>
     
