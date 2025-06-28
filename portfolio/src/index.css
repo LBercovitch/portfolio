@@ -24,3 +24,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@utility text-stroke-width-* {
+  -webkit-text-stroke-width: --value([length]);
+}
+
+@utility text-stroke-color-* {
+  -webkit-text-stroke-color: --value([color]);
+}

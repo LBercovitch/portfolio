@@ -42,7 +42,11 @@ function Landing() {
           transition-transform duration-1000
           ${slideIn ? 'translate-y-full animate-bounce-finite': ''}
         `}>
-          <h1 className="w-full text-center text-9xl font-super-carnival text-[#0000] text-shadow-[5px_5px_#ff7390]" style={{WebkitTextStroke: "4px #333" }}>
+          <h1 className="
+            w-full text-center font-super-carnival text-transparent text-5xl sm:text-7xl lg:text-8xl xl:text-9xl
+            text-stroke-color-[#333] text-stroke-width-[2px] sm:text-stroke-width-[3px] xl:text-stroke-width-[4px]
+            text-shadow-[2px_2px_#ff7390] sm:text-shadow-[3px_3px_#ff7390] xl:text-shadow-[5px_5px_#ff7390]
+          ">
             Leah Bercovitch
           </h1>
         </div>
