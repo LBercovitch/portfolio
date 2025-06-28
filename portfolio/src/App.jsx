@@ -1,10 +1,10 @@
 import './App.css'
+import Landing from './components/landing/landing'
 
 function App() {
   return (
     <>
-      <img src="/LB-logo.png" class="mx-auto"/>
-      <h1 class="align-center">Leah Bercovitch</h1>
+      <Landing />
     </>
   )
 }
