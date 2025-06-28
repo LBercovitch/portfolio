@@ -19,7 +19,7 @@ function Landing() {
     }
   }, [showContent]);
 
-  // Wait until the gif has finished playing, then render the main landing page
+  // Wait until the gif has finished playing before rendering the main landing page
   const handlePlay = () => {
     setSlideIn(false);
 
