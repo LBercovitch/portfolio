@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'SuperCarnival';
-  src: url('/fonts/super-carnival-font/SuperCarnival.ttf') format('truetype');
+  src: url('/public/fonts/super-carnival-font/SuperCarnival.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
