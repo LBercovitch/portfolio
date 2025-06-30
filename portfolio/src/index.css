@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  --font-super-carnival: "SuperCarnival", sans-serif; 
   --animate-bounce-finite: bounce-finite 2s ease-out 1 forwards;
+
+  --font-berlin: "Berlin", sans-serif;
+  --font-berlin-bold: "BerlinBold", sans-serif;
+  --font-berlin-italic: "BerlinItalic", sans-serif;
+  --font-berlin-x-bold: "BerlinXBold", sans-serif;
+  --font-fabrik: "Fabrik", sans-serif;
+  --font-josefin-sans: "JosefinSans", sans-serif;
+  --font-josefin-sans-bold: "JosefinSansBold", sans-serif;
+  --font-josefin-sans-bold-italic: "JosefinSansBoldItalic", sans-serif;
+  --font-josefin-sans-italic: "JosefinSansItalic", sans-serif;
+  --font-josefin-sans-light: "JosefinSansLight", sans-serif;
+  --font-josefin-sans-light-italic: "JosefinSansLightItalic", sans-serif;
+  --font-josefin-sans-semibold: "JosefinSansSemiBold", sans-serif;
+  --font-josefin-sans-semibold-italic: "JosefinSansSemiBoldItalic", sans-serif;
+  --font-josefin-sans-thin: "JosefinSansThin", sans-serif;
+  --font-josefin-sans-thin-italic: "JosefinSansThinItalic", sans-serif;
+  --font-questrial: "Questrial", sans-serif;
+  --font-super-carnival: "SuperCarnival", sans-serif;
 
   @keyframes bounce-finite {
     0%   { transform: translateY(0); }
@@ -16,6 +33,118 @@
     90%  { transform: translateY(0); }
     100% { transform: translateY(0); }
   }
+}
+
+@font-face {
+  font-family: 'Berlin';
+  src: url('/public/fonts/berlin/Berlin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BerlinBold';
+  src: url('/public/fonts/berlin/Berlin Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BerlinItalic';
+  src: url('/public/fonts/berlin/Berlin - Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'BerlinXBold';
+  src: url('/public/fonts/berlin/Berlin X-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fabrik';
+  src: url('/public/fonts/fabrik/fabrik.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('/public/fonts/josefin-sans/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSansBold';
+  src: url('/public/fonts/josefin-sans/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSansBoldItalic';
+  src: url('/public/fonts/josefin-sans/JosefinSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JosefinSansItalic';
+  src: url('/public/fonts/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JosefinSansLight';
+  src: url('/public/fonts/josefin-sans/JosefinSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSansLightItalic';
+  src: url('/public/fonts/josefin-sans/JosefinSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JosefinSansSemiBold';
+  src: url('/public/fonts/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSansSemiBoldItalic';
+  src: url('portfolio/portfolio/public/fonts/josefin-sans/JosefinSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'JosefinSansThin';
+  src: url('/public/fonts/josefin-sans/JosefinSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JosefinSansThinItalic';
+  src: url('/public/fonts/josefin-sans/JosefinSans-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Questrial';
+  src: url('/public/fonts/questrial/Questrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {

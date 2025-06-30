@@ -1,11 +1,11 @@
-import './App.css'
-import Landing from './components/landing/landing'
+import { Routes, Route } from 'react-router-dom'
+import Landing from './pages/landing'
 
 function App() {
   return (
-    <>
-      <Landing />
-    </>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+    </Routes>
   )
 }
 

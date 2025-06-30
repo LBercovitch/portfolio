@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Resume",
+    "id": "resume",
+    "route": "/resume"
+  }, {
+    "name": "Projects",
+    "id": "projects",
+    "route": "/projects"
+  }, {
+    "name": "Contact",
+    "id": "contact",
+    "route": "/contact"
+  }
+]
