@@ -9,8 +9,8 @@ function LandingNav() {
           key={id}
           to={route}
           className="
-            font-josefin-sans text-gray-800 bg-slate-200 rounded-full border-gray-800
-            text-center w-5/6 max-w-80 min-w-fit md:w-fit shadow-[7px_7px_#ff7390] hover:bg-rose-300
+            font-josefin-sans text-gray-800 bg-rose-300 rounded-full border-gray-800
+            text-center w-5/6 max-w-80 min-w-fit md:w-fit shadow-[7px_7px_#ff7390] hover:bg-rose-400
             text-3xl px-6 py-3 border-3 xl:text-5xl xl:px-8 xl:py-4 xl:border-4"
         >
           {name}
