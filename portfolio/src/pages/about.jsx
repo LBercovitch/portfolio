@@ -37,11 +37,10 @@ function About() {
           If you're curious to see what I've been working on, keep scrolling to
           explore my resume.
         </p>
-        <h2
-          className="w-full my-5 md:my-6 lg:my-8
-            text-center font-super-carnival text-transparent text-4xl sm:text-6xl lg:text-7xl
-            text-stroke-color-[#333] text-stroke-width-[2px] lg:text-stroke-width-[3px]
-            text-shadow-[2px_2px_#6acbf8] sm:text-shadow-[3px_3px_#6acbf8] lg:text-shadow-[4px_4px_#6acbf8]"
+        <h2 className="w-full my-5 md:my-6 lg:my-8
+          text-center font-super-carnival text-transparent text-4xl sm:text-6xl lg:text-7xl
+          text-stroke-color-[#333] text-stroke-width-[2px] lg:text-stroke-width-[3px]
+          text-shadow-[2px_2px_#6acbf8] sm:text-shadow-[3px_3px_#6acbf8] lg:text-shadow-[4px_4px_#6acbf8]"
         >
           My Resume
         </h2>
