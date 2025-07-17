@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/portfolio/" />
+    <meta charset="utf-8">
+    <script>
+      // Get the full path the user tried to access
+      var redirectTo = window.location.pathname;
+
+      // Add the base path (e.g., /portfolio) before the hash
+      var newUrl = '/portfolio/index.html#' + redirectTo.replace('/portfolio', '');
+
+      // Redirect to the React app with hash routing
+      window.location.replace(newUrl);
+    </script>
   </head>
   <body></body>
 </html>
