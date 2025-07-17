@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
     <script>
       (function () {
-        var path = window.location.pathname;
         var base = '/portfolio';
+        var path = window.location.pathname;
+        var subPath = path.startsWith(base) ? path.slice(base.length) : '/';
 
-        // Only redirect if the path starts with the base
-        if (path.startsWith(base)) {
-          var subPath = path.slice(base.length); // e.g., '/about' or '/contact'
-          window.location.replace(`${base}/index.html#${subPath}`);
-        } else {
-          // If not under base path, redirect to base landing page
-          window.location.replace(`${base}/index.html`);
-        }
+        // Ensure subPath starts with a slash
+        if (!subPath.startsWith('/')) subPath = '/' + subPath;
+
+        // Redirect to hash-based route
+        window.location.replace(`${base}/#${subPath}`);
       })();
     </script>
   </head>
-  <body></body>
+  <body>
+    <noscript>Please enable JavaScript to view this page.</noscript>
+  </body>
 </html>
