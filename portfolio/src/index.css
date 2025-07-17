@@ -161,3 +161,7 @@
 @utility text-stroke-color-* {
   -webkit-text-stroke-color: --value([color]);
 }
+
+.paragraph {
+  @apply font-josefin-sans text-gray-800 text-2xl mb-5;
+}

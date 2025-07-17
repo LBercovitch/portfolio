@@ -1,8 +1,8 @@
 [
   {
-    "name": "Resume",
-    "id": "resume",
-    "route": "/resume"
+    "name": "About",
+    "id": "about",
+    "route": "/about"
   }, {
     "name": "Projects",
     "id": "projects",

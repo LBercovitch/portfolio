@@ -1,0 +1,169 @@
+[
+  {
+    "id": "nrcan",
+    "dates": {
+      "start": "2024-09-01",
+      "end": "2025-07-15"
+    },
+    "organization": "Natural Resources Canada (NRCan)",
+    "projects": [
+      {
+        "id": "nrcanApp",
+        "projDates": {
+          "start": "2024-09-01",
+          "end": "2025-07-15"
+        },
+        "position": "Full Stack Web Developer",
+        "projectName": "app.geo.ca version 2",
+        "description": "Contributed to the development of app.geo.ca v2, a responsive GIS catalogue built with SvelteKit, SST, and AWS.",
+        "bulletPoints": [
+          "Developed reusable and reactive UI components (tables, forms, modals, carousels, map cart) using Svelte and Tailwind.",
+          "Implemented back-end solutions to query and parse data from NRCan's GeoCore database and optimized routing with SvelteKit.",
+          "Tested, debugged, and refined lambda functions used to create and populate AWS S3 buckets.",
+          "Applied design updates from wireframes and user feedback.",
+          "Occasionally contributed minor components and bug fixes to related projects such as NRCan's GeoView platform.",
+          "Maintained and upgraded project dependencies (Svelte, SST, Tailwind)."
+        ],
+        "tech": [
+          "SvelteKit",
+          "Tailwind",
+          "TypeScript",
+          "AWS Lambda",
+          "AWS S3",
+          "Node.js",
+          "GitHub",
+          "GeoCore",
+          "GeoView"
+        ],
+        "link": "https://app.geo.ca/"
+      }
+    ]
+  },
+  {
+    "id": "fujitsu",
+    "dates": {
+      "start": "2019-10-01",
+      "end": "2024-09-01"
+    },
+    "organization": "Fujitsu Consulting (Canada) Inc.",
+    "projects": [
+      {
+        "id": "fujitsuNRCan",
+        "projDates": {
+          "start": "2024-01-01",
+          "end": "2024-09-01"
+        },
+        "position": "Geomatics Specialist",
+        "projectName": "NRCan - Canadian Geospatial Platform Pygeoapi Application",
+        "description": "Developed a metadata search platform using pygeoapi based on updated OGC API standards.",
+        "bulletPoints": [
+          "Built WCAG-compliant frontend UI with Jinja templates, Vue.js, and WET-inspired design elements.",
+          "Implemented new features, such as the ability to isolate map features using data table checkboxes, and sorting table results from the server-side responses.",
+          "Refactored an existing backend provider to access and parse Canadian Geospatial Platform (cgp) data.",
+          "Addressed user-requested enhancements and bug fixes."
+        ],
+        "tech": [
+          "Vue.js",
+          "Python",
+          "Leaflet",
+          "Jinja",
+          "JavaScript",
+          "HTML/CSS",
+          "GitHub",
+          "Linux"
+        ],
+        "link": "https://github.com/Canadian-Geospatial-Platform/cgp_pygeoapi"
+      },
+      {
+        "id": "fujitsuTC",
+        "projDates": {
+          "start": "2019-10-01",
+          "end": "2023-08-01"
+        },
+        "position": "Geomatics Specialist",
+        "projectName": "Transport Canada - Enhanced Maritime Situational Awareness",
+        "description": "Supported development of a web-based GIS platform for real-time maritime monitoring in collaboration with coastal and Indigenous communities.",
+        "bulletPoints": [
+          "Built custom mapping tools and forms using JavaScript and OpenLayers (e.g., graticules, dead reckoning, buffers, context menus).",
+          "Developed and maintained PostGIS-enabled database features using Python and SQLAlchemy.",
+          "Designed automated test cases with TestCafe to support frontend QA and debugging."
+        ],
+        "tech": [
+          "JavaScript",
+          "OpenLayers",
+          "Python",
+          "SQLAlchemy",
+          "PostGIS",
+          "HTML/CSS",
+          "TestCafe",
+          "Agile/Scrum"
+        ],
+        "link": "https://emsa-casm.ca/"
+      }
+    ]
+  },
+  {
+    "id": "monk",
+    "dates": {
+      "start": "2015-05-01",
+      "end": "2019-09-01"
+    },
+    "organization": "Monk Office Distribution Centre",
+    "projects": [
+      {
+        "id": "monkOnboarding",
+        "projDates": {
+          "start": "2016-09-01",
+          "end": "2017-04-01"
+        },
+        "position": "Student Web Developer",
+        "projectName": "Onboarding Assistant Application",
+        "description": "Developed a full-stack web app to streamline HR onboarding processes by replacing paper forms with secure, digital workflows.",
+        "bulletPoints": [
+          "Developed frontend forms and backend logic, including a user authentication system.",
+          "Created automated tests to support debugging and ensure cross-browser compatibility."
+        ],
+        "tech": [
+          "JavaScript",
+          "HTML/CSS",
+          "PHP",
+          "MySQL",
+          "VS Code",
+          "Windows/Linux"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "laura",
+    "dates": {
+      "start": "2012-09-01",
+      "end": "2013-06-01"
+    },
+    "organization": "Friends of Laura Secord",
+    "projects": [
+      {
+        "id": "lauraTrail",
+        "projDates": {
+          "start": "2012-09-01",
+          "end": "2013-06-01"
+        },
+        "position": "Student Geomatics Specialist",
+        "projectName": "Friends of Laura Secord Legacy Trail Mapping Project",
+        "description": "Supported development of public trail maps by collecting and analyzing geospatial data.",
+        "bulletPoints": [
+          "Captured precise trail data using Trimble GPS and created 3D terrain models.",
+          "Rated trail difficulty based on spatial analysis.",
+          "Produced printable thematic maps for public navigation."
+        ],
+        "tech": [
+          "ArcMap",
+          "ArcPad",
+          "Trimble GPS",
+          "Windows"
+        ],
+        "link": "https://www.friendsoflaurasecord.com/"
+      }
+    ]
+  }
+]
