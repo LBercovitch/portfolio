@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <script>
-      // Get the full path the user tried to access
-      var redirectTo = window.location.pathname;
+      (function () {
+        var path = window.location.pathname;
+        var base = '/portfolio';
 
-      // Add the base path (e.g., /portfolio) before the hash
-      var newUrl = '/portfolio/index.html#' + redirectTo.replace('/portfolio', '');
-
-      // Redirect to the React app with hash routing
-      window.location.replace(newUrl);
+        // Only redirect if the path starts with the base
+        if (path.startsWith(base)) {
+          var subPath = path.slice(base.length); // e.g., '/about' or '/contact'
+          window.location.replace(`${base}/index.html#${subPath}`);
+        } else {
+          // If not under base path, redirect to base landing page
+          window.location.replace(`${base}/index.html`);
+        }
+      })();
     </script>
   </head>
   <body></body>
