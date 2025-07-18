@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/" />
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      (function () {
+        var base = '/portfolio';
+        var path = window.location.pathname;
+        var subPath = path.startsWith(base) ? path.slice(base.length) : '/';
+
+        // Ensure subPath starts with a slash
+        if (!subPath.startsWith('/')) subPath = '/' + subPath;
+
+        // Redirect to hash-based route
+        window.location.replace(`${base}/#${subPath}`);
+      })();
+    </script>
   </head>
-  <body></body>
+  <body>
+    <noscript>Please enable JavaScript to view this page.</noscript>
+  </body>
 </html>
