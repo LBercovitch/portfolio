@@ -7,13 +7,31 @@
       (function () {
         var base = '/portfolio';
         var path = window.location.pathname;
-        var subPath = path.startsWith(base) ? path.slice(base.length) : '/';
 
-        // Ensure subPath starts with a slash
-        if (!subPath.startsWith('/')) subPath = '/' + subPath;
+        // If exactly /portfolio (no slash), redirect to /portfolio/
+        if (path === '/portfolio') {
+          window.location.replace('/portfolio/');
+          return;
+        }
 
-        // Redirect to hash-based route
-        window.location.replace(`${base}/#${subPath}`);
+        // If already on a correct hash route, do nothing
+        if (window.location.hash && path === `${base}/`) {
+          return;
+        }
+
+        // Handle routes like /portfolio/about, /portfolio/contact, etc.
+        if (path.startsWith(base)) {
+          var subPath = path.slice(base.length);
+
+          // Ensure subPath starts with a slash
+          if (!subPath.startsWith('/')) subPath = '/' + subPath;
+
+          // Redirect to hash-based route
+          window.location.replace(`${base}/#${subPath}`);
+        } else {
+          // Fallback to base
+          window.location.replace(`${base}/`);
+        }
       })();
     </script>
   </head>
