@@ -4,16 +4,29 @@ const Contact = () => {
   const siteKey = import.meta.env.VITE_TURNSTILE_SITEKEY;
   const workerUrl = import.meta.env.VITE_TURNSTILE_WORKER_URL;
   const formRef = useRef(null);
+  const widgetRef = useRef(null);
+  const widgetIdRef = useRef(null);
   const [status, setStatus] = useState('');
   const [token, setToken] = useState('');
 
   useEffect(() => {
-    // Define the callback function globally
     window.onTurnstileSuccess = function (token) {
-      console.log('Turnstile token:', token);
       setToken(token);
     };
-  }, []);
+
+    const waitForTurnstile = () => {
+      if (window.turnstile && widgetRef.current && widgetIdRef.current === null) {
+        widgetIdRef.current = window.turnstile.render(widgetRef.current, {
+          sitekey: siteKey,
+          callback: onTurnstileSuccess,
+        });
+      } else if (!window.turnstile || !widgetRef.current) {
+        setTimeout(waitForTurnstile, 100);
+      }
+    };
+
+    waitForTurnstile();
+  }, [siteKey]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,12 +43,12 @@ const Contact = () => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
-      turnstileToken: siteKey,
     });
 
     if (res.ok) {
       setStatus('Message sent!');
       form.reset();
+      setToken('');
     } else {
       setStatus('Something went wrong. Please try again.');
     }
@@ -73,12 +86,8 @@ const Contact = () => {
         ></textarea>
       </div>
 
-      {/* Turnstile Widget */}
-      <div
-        className="cf-turnstile"
-        data-sitekey={siteKey}
-        data-callback="onTurnstileSuccess"
-      ></div>
+      {/* Turnstile container for rendering */}
+      <div ref={widgetRef}></div>
 
       <button
         type="submit"
