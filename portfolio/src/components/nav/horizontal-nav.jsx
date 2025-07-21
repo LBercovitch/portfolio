@@ -1,23 +1,13 @@
 import { Link } from 'react-router-dom'
 import navItems from './nav-items.json';
+import colorMap from './color-map.json';
 
-function HorizontalNav({colorName, shadowHex}) {
-  const bgColorMap = {
-    amber: 'bg-amber-300',
-    lime: 'bg-lime-400',
-    sky: 'bg-[#6acbf8]',
-  };
-  const bgColorCSS = bgColorMap[colorName];
-
-  const bgHoverColorMap = {
-    amber: 'hover:bg-amber-400',
-    lime: 'hover:bg-lime-500',
-    sky: 'hover:bg-sky-400',
-  };
-  const bgHoverColorCSS = bgHoverColorMap[colorName];
+function HorizontalNav({colorName}) {
+  const bgColorCSS = colorMap[colorName].bg;
+  const bgHoverColorCSS = colorMap[colorName].bgHover;
 
   return (
-    <nav className={`flex justify-between items-center sticky top-0 z-10 w-full h-24 ${bgColorCSS} border-b-3 border-gray-800`}>
+    <nav className={`hidden md:flex justify-between items-center sticky top-0 z-10 w-full h-24 ${bgColorCSS} border-b-3 border-gray-800`}>
       <div className="h-full">
         <Link
           to="/"

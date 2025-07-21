@@ -165,3 +165,13 @@
 .paragraph {
   @apply font-josefin-sans text-gray-800 text-2xl mb-5;
 }
+
+/****Annimated Menu Bar****/
+.bar1, .bar2, .bar3 {
+  @apply w-11;
+  @apply h-1.5;
+  @apply bg-[#333];
+  @apply my-1;
+  @apply rounded-full;
+  @apply transition duration-400;
+}

@@ -1,9 +1,11 @@
 import HorizontalNav from '../components/nav/horizontal-nav';
+import VerticalNav from '../components/nav/vertical-nav';
 
 function Projects() {
   return (
     <div className="bg-lime-200 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
-      <HorizontalNav colorName="lime" shadowHex="#7ccf00" />
+      <HorizontalNav colorName="lime" />
+      <VerticalNav colorName="lime" />
       <div className="flex flex-col pt-20 h-full min-h-screen w-11/12 md:w-180 lg:w-256 xl:w-300">
         <h1
           className="w-full text-center font-super-carnival text-transparent text-6xl sm:text-7xl lg:text-8xl xl:text-9xl

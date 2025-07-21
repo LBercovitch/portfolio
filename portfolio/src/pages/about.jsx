@@ -1,11 +1,13 @@
 import TimeLine from '../components/time-line/time-line';
 import HorizontalNav from '../components/nav/horizontal-nav';
+import VerticalNav from '../components/nav/vertical-nav';
 
 function About() {
 
   return (
     <div className="bg-sky-200 grid place-items-center">
-      <HorizontalNav colorName="sky" shadowHex="#6acbf8" />
+      <HorizontalNav colorName="sky" />
+      <VerticalNav colorName="sky" />
       <div className="flex flex-col pt-20 h-full min-h-screen w-11/12 md:w-180 lg:w-256 xl:w-300">
         <h1
           className="w-full text-center font-super-carnival text-transparent text-6xl sm:text-7xl lg:text-8xl xl:text-9xl
