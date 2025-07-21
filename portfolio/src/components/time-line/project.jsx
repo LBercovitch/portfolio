@@ -14,7 +14,7 @@ function Project({ project }) {
 
   return (
     <div>
-      <h4 className="font-josefin-sans-semibold text-2xl mb-2">
+      <h4 className="font-josefin-sans-semibold text-3xl mb-2">
         {position} - {projectName} ({formatDateFromString(projDates.start, 'short')} - {formatDateFromString(projDates.end, 'short')})
       </h4>
       <p className="mt-4">
@@ -33,7 +33,7 @@ function Project({ project }) {
       {link && (
         <a href={link} className="block mx-auto bg-sky-200 rounded-full border-gray-800
           text-center w-5/6 max-w-80 min-w-fit shadow-[7px_7px_#6acbf8] hover:bg-sky-600
-          hover:text-sky-50 text-xl px-5 py-2 mt-8 border-2"
+          hover:text-sky-50 font-josefin-sans-semibold text-3xl px-5 py-2 mt-8 border-2"
         >
           View Project
         </a>
