@@ -7,6 +7,16 @@ function Landing() {
   const [slideIn, setSlideIn] = useState(false);
   const gifDuration = 2300; // Duration of intro gif
 
+  // Check if the intro has already been shown this session
+  const alreadyShown = sessionStorage.getItem('introPlayed');
+
+  useEffect(() => {
+    if (alreadyShown === 'true') {
+      setShowContent(true);
+      setSlideIn(true);
+    }
+  }, [alreadyShown]);
+
   // Trigger the slide-in animation after show content is set.
   useEffect(() => {
     if (showContent) {
@@ -26,6 +36,13 @@ function Landing() {
 
     setTimeout(() => {
       setShowContent(true);
+
+      // Mark as played in session storage,
+      // but set a time out to allow for the bounce annimation first
+      setTimeout(() => {
+        sessionStorage.setItem('introPlayed', 'true');
+      }, 500);
+
     }, gifDuration);
   };
 
@@ -41,7 +58,7 @@ function Landing() {
         <div className={`
           flex flex-col absolute justify-center items-center -top-full w-full h-dvh bg-rose-200
           transition-transform duration-1000
-          ${slideIn ? 'translate-y-full animate-bounce-finite': ''}
+          ${slideIn && !alreadyShown ? 'translate-y-full animate-bounce-finite': alreadyShown ? 'translate-y-full' : ''}
         `}>
           <h1 className="
             w-full text-center font-super-carnival text-transparent text-6xl sm:text-7xl lg:text-8xl xl:text-9xl
