@@ -13,7 +13,7 @@ function Projects() {
           Projects
         </h1>
         <p className="paragraph text-center">
-          Stay tooned, projects are coming soon!
+          Stay tuned, projects are coming soon!
         </p>
       </div>
     </div>
