@@ -16,7 +16,7 @@ function About() {
           src={`${import.meta.env.BASE_URL}/Leah.png`}
           className="self-center object-cover mt-5 mb-12 md:mt-6 md:mb-16 lg:mt-8 lg:mb-24 h-48 w-48
             md:h-72 md:w-72 lg:h-96 lg:w-96 xl:h-124 xl:w-124
-            border-6 md:border-8 border-[#333] rounded-[40px] md:rounded-[60px] lg:rounded-[75px]
+            border-6 md:border-8 border-[#333] rounded-[30px] md:rounded-[60px] lg:rounded-[75px]
             shadow-[10px_10px_#6acbf8] md:shadow-[15px_15px_#6acbf8] lg:shadow-[20px_20px_#6acbf8]"
           alt="Leah's portrait"
         />
