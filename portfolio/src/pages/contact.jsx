@@ -1,11 +1,13 @@
 import ContactForm from '../components/contact-form/contact-form';
+import HorizontalNav from '../components/nav/horizontal-nav';
 
 const Contact = () => {
   const siteKey = import.meta.env.VITE_TURNSTILE_SITEKEY;
   const workerUrl = import.meta.env.VITE_TURNSTILE_WORKER_URL;
 
   return (
-    <div className="bg-amber-200 flex justify-center h-full min-h-screen font-josefin-sans text-2xl">
+    <div className="bg-amber-200 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
+      <HorizontalNav colorName="amber" shadowHex="#ffb900" />
       <div className="flex flex-col pt-20 w-11/12 md:w-180 lg:w-256 xl:w-300">
         <h1
           className="w-full text-center font-super-carnival text-transparent text-6xl sm:text-7xl lg:text-8xl xl:text-9xl
