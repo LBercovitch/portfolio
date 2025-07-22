@@ -14,7 +14,7 @@ function Project({ project }) {
 
   return (
     <div>
-      <h4 className="font-josefin-sans-semibold text-3xl mb-2">
+      <h4 className="font-josefin-sans-semibold text-2xl md:text-3xl mb-2">
         {position} - {projectName} ({formatDateFromString(projDates.start, 'short')} - {formatDateFromString(projDates.end, 'short')})
       </h4>
       <p className="mt-4">

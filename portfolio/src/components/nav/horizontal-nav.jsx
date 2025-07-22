@@ -7,7 +7,10 @@ function HorizontalNav({colorName}) {
   const bgHoverColorCSS = colorMap[colorName].bgHover;
 
   return (
-    <nav className={`hidden md:flex justify-between items-center sticky top-0 z-10 w-full h-24 ${bgColorCSS} border-b-3 border-gray-800`}>
+    <nav
+      className={`hidden md:flex justify-between items-center sticky top-0 z-10
+        w-full h-24 ${bgColorCSS} border-b-3 border-gray-800`}
+    >
       <div className="h-full">
         <Link
           to="/"

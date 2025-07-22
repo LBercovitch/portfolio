@@ -168,10 +168,5 @@
 
 /****Annimated Menu Bar****/
 .bar1, .bar2, .bar3 {
-  @apply w-11;
-  @apply h-1.5;
-  @apply bg-[#333];
-  @apply my-1;
-  @apply rounded-full;
-  @apply transition duration-400;
+  @apply w-11 h-1.5 bg-[#333] my-1 rounded-full transition duration-400;
 }
