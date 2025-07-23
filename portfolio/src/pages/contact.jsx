@@ -18,8 +18,8 @@ const Contact = () => {
         >
           Contact
         </h1>
-        <p className="paragraph text-center self-center w-11/12 max-w-xl">
-          Send me a message by filling out the form below. Please include your name and a valid email so I can get back to you.
+        <p className="paragraph text-center self-center w-11/12 max-w-xl mt-6">
+          Send me a message by filling out the form below. Please include your name and a valid email so I can get back to you soon.
         </p>
         <ContactForm siteKey={siteKey} workerUrl={workerUrl} />
       </div>

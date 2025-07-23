@@ -14,7 +14,7 @@ function Projects() {
         >
           Projects
         </h1>
-        <p className="paragraph text-center">
+        <p className="paragraph text-center mt-6">
           Stay tuned, projects are coming soon!
         </p>
       </div>
