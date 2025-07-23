@@ -6,7 +6,7 @@
       "end": "2025-07-15"
     },
     "organization": "Natural Resources Canada (NRCan)",
-    "projects": [
+    "experiences": [
       {
         "id": "nrcanApp",
         "projDates": {
@@ -14,7 +14,7 @@
           "end": "2025-07-15"
         },
         "position": "Full Stack Web Developer",
-        "projectName": "app.geo.ca version 2",
+        "experienceName": "app.geo.ca version 2",
         "description": "Contributed to the development of app.geo.ca v2, a responsive GIS catalogue built with SvelteKit, SST, and AWS.",
         "bulletPoints": [
           "Developed reusable and reactive UI components (tables, forms, modals, carousels, map cart) using Svelte and Tailwind.",
@@ -46,7 +46,7 @@
       "end": "2024-09-01"
     },
     "organization": "Fujitsu Consulting (Canada) Inc.",
-    "projects": [
+    "experiences": [
       {
         "id": "fujitsuNRCan",
         "projDates": {
@@ -54,7 +54,7 @@
           "end": "2024-09-01"
         },
         "position": "Geomatics Specialist",
-        "projectName": "NRCan - Canadian Geospatial Platform Pygeoapi Application",
+        "experienceName": "NRCan - Canadian Geospatial Platform Pygeoapi Application",
         "description": "Developed a metadata search platform using pygeoapi based on updated OGC API standards.",
         "bulletPoints": [
           "Built WCAG-compliant frontend UI with Jinja templates, Vue.js, and WET-inspired design elements.",
@@ -81,7 +81,7 @@
           "end": "2023-08-01"
         },
         "position": "Geomatics Specialist",
-        "projectName": "Transport Canada - Enhanced Maritime Situational Awareness",
+        "experienceName": "Transport Canada - Enhanced Maritime Situational Awareness",
         "description": "Supported development of a web-based GIS platform for real-time maritime monitoring in collaboration with coastal and Indigenous communities.",
         "bulletPoints": [
           "Built custom mapping tools and forms using JavaScript and OpenLayers (e.g., graticules, dead reckoning, buffers, context menus).",
@@ -109,7 +109,7 @@
       "end": "2019-09-01"
     },
     "organization": "Monk Office Distribution Centre",
-    "projects": [
+    "experiences": [
       {
         "id": "monkOnboarding",
         "projDates": {
@@ -117,7 +117,7 @@
           "end": "2017-04-01"
         },
         "position": "Student Web Developer",
-        "projectName": "Onboarding Assistant Application",
+        "experienceName": "Onboarding Assistant Application",
         "description": "Developed a full-stack web app to streamline HR onboarding processes by replacing paper forms with secure, digital workflows.",
         "bulletPoints": [
           "Developed frontend forms and backend logic, including a user authentication system.",
@@ -141,7 +141,7 @@
       "end": "2013-06-01"
     },
     "organization": "Friends of Laura Secord",
-    "projects": [
+    "experiences": [
       {
         "id": "lauraTrail",
         "projDates": {
@@ -149,7 +149,7 @@
           "end": "2013-06-01"
         },
         "position": "Student Geomatics Specialist",
-        "projectName": "Friends of Laura Secord Legacy Trail Mapping Project",
+        "experienceName": "Friends of Laura Secord Legacy Trail Mapping Project",
         "description": "Supported development of public trail maps by collecting and analyzing geospatial data.",
         "bulletPoints": [
           "Captured precise trail data using Trimble GPS and created 3D terrain models.",

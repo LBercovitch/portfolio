@@ -13,5 +13,10 @@
     "bg": "bg-[#6acbf8]",
     "bgHover": "hover:bg-sky-400",
     "bgVertMenu": "bg-sky-200"
+  },
+  "violet": {
+    "bg": "bg-violet-300",
+    "bgHover": "hover:bg-violet-400",
+    "bgVertMenu": "bg-violet-200"
   }
 }

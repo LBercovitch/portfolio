@@ -1,5 +1,6 @@
 import HorizontalNav from '../components/nav/horizontal-nav';
 import VerticalNav from '../components/nav/vertical-nav';
+import ProjectList from '../components/projects/project-list';
 
 function Projects() {
   return (
@@ -14,9 +15,15 @@ function Projects() {
         >
           Projects
         </h1>
-        <p className="paragraph text-center mt-6">
-          Stay tuned, projects are coming soon!
+        <p className="paragraph mt-6">
+          As a developer, I know how important it is to stay up to date with the latest technologies.
+          So, I have created this page as a space for me to experiment, design, and build apps, games, and mockups
+          while I expand my skills and stay current with modern frameworks and tools.
         </p>
+        <p className="paragraph">
+          Feel free to explore the projects below and see what I've been working on! 
+        </p>
+        <ProjectList />
       </div>
     </div>
   );

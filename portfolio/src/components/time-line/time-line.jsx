@@ -1,4 +1,4 @@
-import Experience from './experience.jsx';
+import Experience from './experience';
 import resumeItems from './resume-items.json';
 import { formatDateFromString } from '../../utils/parse-dates.js';
 

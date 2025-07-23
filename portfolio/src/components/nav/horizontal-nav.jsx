@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import navItems from './nav-items.json';
 import colorMap from './color-map.json';
 
