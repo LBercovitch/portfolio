@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Timer from '../timer/timer';
 
 function GameControls({ timerActive, handleGiveUpClick, handlePlayPauseClick, resetTimer, setTimerActive, correctCountries, setGuess, guessMessage }) {
