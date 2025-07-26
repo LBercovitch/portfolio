@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 function MenuButton({ active, setActive }) {
   const toggleActive = () => {
     setActive(active => !active);
