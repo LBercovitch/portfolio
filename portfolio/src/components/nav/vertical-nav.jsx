@@ -13,7 +13,7 @@ function VerticalNav({ colorName }) {
 
   return (
     <nav
-      className={`md:hidden flex justify-between items-center sticky top-0 z-10
+      className={`md:hidden flex justify-between items-center sticky top-0 z-20
         w-full h-24 ${bgColorCSS} border-b-3 border-gray-800`}
     >
       {/* Page Logo */}
