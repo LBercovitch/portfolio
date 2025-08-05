@@ -6,6 +6,34 @@
     "route": "/projects/country-quiz",
     "date": "2025-07-22",
     "image": "/Globe.png",
-    "imageAlt": "globe"
+    "imageAlt": "globe",
+    "external": false
+  }, {
+    "name": "app.geo.ca",
+    "id": "appgeoca",
+    "description": "A responsive GIS catalogue built for Natural Resources Canada. It uses SvelteKit, Tailwind, and AWS to showcase Canadian geospatial data.",
+    "route": "https://app.geo.ca/",
+    "date": "2025-07-11",
+    "image": "/Appgeoca.png",
+    "imageAlt": "app.geo.ca logo",
+    "external": true
+  }, {
+    "name": "CGP Pygeoapi",
+    "id": "pygeoapi",
+    "description": "An instance of pygeoapi for the Canadian Geospatial Platform. A catalogue for displaying metadata records of geospatial data.",
+    "route": "https://github.com/Canadian-Geospatial-Platform/cgp_pygeoapi",
+    "date": "2024-09-30",
+    "image": "/GlobeFileCabinet.png",
+    "imageAlt": "File cabinet with globe",
+    "external": true
+  }, {
+    "name": "EMSA - CASM",
+    "id": "emsa",
+    "description": "The Enhanced Maritime Situational Awareness platform is a set of GIS tools built for Transport Canada and coastal Indigenous communities for real-time maritime monitoring.",
+    "route": "https://emsa-casm.ca/",
+    "date": "2023-08-15",
+    "image": "/CanadianBoat.png",
+    "imageAlt": "A Canadian Boat",
+    "external": true
   }
 ]
