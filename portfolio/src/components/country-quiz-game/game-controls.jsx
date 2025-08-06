@@ -9,6 +9,19 @@ function GameControls({ timerActive, handleGiveUpClick, handlePlayPauseClick, re
     setCurrentGuess("");
   };
 
+  const play = (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <polygon points="6,4 20,12 6,20" />
+    </svg>
+  );
+
+  const pause = (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+      <rect x="6" y="4" width="4" height="16" />
+      <rect x="14" y="4" width="4" height="16" />
+    </svg>
+  );
+
   return (
     <div className="flex flex-wrap-reverse gap-y-5">
       <div className="flex flex-grow flex-wrap gap-y-4">
@@ -51,11 +64,11 @@ function GameControls({ timerActive, handleGiveUpClick, handlePlayPauseClick, re
         <button
           type="button"
           aria-label={`${timerActive ? 'Pause Game' : 'Play Game'}`}
-          className="text-center border-3 border-[#333] rounded-lg min-w-14 h-15 mr-3 bg-violet-100
+          className="flex justify-center items-center border-3 border-[#333] rounded-lg min-w-14 h-15 mr-3 bg-violet-100
             hover:bg-violet-300 shadow-[4px_4px_#a684ff] cursor-pointer"
           onClick={handlePlayPauseClick}
         >
-          {timerActive ? '⏸' : '▶'}
+          {timerActive ? pause : play}
         </button>
         <Timer
           timerActive={timerActive}
