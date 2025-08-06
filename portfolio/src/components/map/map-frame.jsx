@@ -69,7 +69,7 @@ function MapFrame({ mapFeatures }) {
   return (
     <div
       ref={mapRef}
-      className="w-full aspect-video border border-gray-300"
+      className="w-full aspect-video border border-gray-300 rounded"
     />
   );
 }

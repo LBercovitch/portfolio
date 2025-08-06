@@ -29,7 +29,7 @@ function HorizontalNav({colorName}) {
             key={id}
             to={route}
             className={`h-full flex items-center font-josefin-sans text-gray-800 ${bgHoverColorCSS}
-              text-center text-3xl px-6 py-3 xl:text-5xl xl:px-8 xl:py-4`}
+              text-center text-4xl px-6 py-3 xl:text-5xl xl:px-8 xl:py-4`}
           >
             {name}
           </Link>

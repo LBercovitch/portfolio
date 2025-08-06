@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --animate-bounce-finite: bounce-finite 2s ease-out 1 forwards;
-
   --font-berlin: "Berlin", sans-serif;
   --font-berlin-bold: "BerlinBold", sans-serif;
   --font-berlin-italic: "BerlinItalic", sans-serif;
@@ -20,6 +18,10 @@
   --font-josefin-sans-thin-italic: "JosefinSansThinItalic", sans-serif;
   --font-questrial: "Questrial", sans-serif;
   --font-super-carnival: "SuperCarnival", sans-serif;
+}
+
+@theme {
+  --animate-bounce-finite: bounce-finite 2s ease-out 1 forwards;
 
   @keyframes bounce-finite {
     0%   { transform: translateY(0); }
@@ -169,4 +171,16 @@
 /****Annimated Menu Bar****/
 .bar1, .bar2, .bar3 {
   @apply w-11 h-1.5 bg-[#333] my-1 rounded-full transition duration-400;
+}
+
+/***** Spinner *****/
+@keyframes spinSweep {
+  from {transform: rotate(0turn)}
+  to {transform: rotate(1turn)}
+}
+
+@utility spinner-arc-* {
+  background: conic-gradient(transparent, var(--arc-color));
+  animation: spinSweep 2s linear infinite;
+  --arc-color: --value([color]);
 }

@@ -1,6 +1,6 @@
 function GameIntro({ handleStartClick }) {
   return (
-    <div className="flex flex-wrap bg-violet-50 border-4 border-[#333] p-5 rounded-xl shadow-[12px_12px_#a684ff] my-6">
+    <>
       <div className="basis-full md:basis-3/4 self-center">
         <h2 className="font-josefin-sans-bold mb-5">
           Think you can name every country in the world?
@@ -24,7 +24,7 @@ function GameIntro({ handleStartClick }) {
           />
         </button>
       </div>
-    </div>
+    </>
   );
 }
 

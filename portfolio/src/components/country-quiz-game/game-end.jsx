@@ -1,6 +1,6 @@
 function GameEnd({ handleStartClick, score = 0, totalNumCountries = 198 }) {
   return (
-    <div className="flex flex-wrap bg-violet-50 border-4 border-[#333] p-5 rounded-xl shadow-[12px_12px_#a684ff] my-6">
+    <>
       <div className="basis-full md:basis-3/4 self-center">
         <h2 className="font-josefin-sans-bold mb-5 text-4xl">
           {score === totalNumCountries ? `Congratulations! You named every country!` :
@@ -25,7 +25,7 @@ function GameEnd({ handleStartClick, score = 0, totalNumCountries = 198 }) {
           />
         </button>
       </div>
-    </div>
+    </>
   );
 }
 
