@@ -5,7 +5,7 @@ import VerticalNav from '../components/nav/vertical-nav';
 function About() {
 
   return (
-    <div className="bg-sky-200 grid place-items-center">
+    <div className="bg-sky-50 grid place-items-center">
       <HorizontalNav colorName="sky" />
       <VerticalNav colorName="sky" />
       <div className="flex flex-col pt-8 md:pt-20 h-full min-h-screen w-11/12 md:w-180 lg:w-256 xl:w-300">

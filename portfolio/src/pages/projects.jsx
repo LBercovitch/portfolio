@@ -4,7 +4,7 @@ import ProjectList from '../components/projects/project-list';
 
 function Projects() {
   return (
-    <div className="bg-lime-200 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
+    <div className="bg-lime-50 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
       <HorizontalNav colorName="lime" />
       <VerticalNav colorName="lime" />
       <div className="flex flex-col pt-8 md:pt-20 h-full min-h-screen w-11/12 md:w-180 lg:w-256 xl:w-300">

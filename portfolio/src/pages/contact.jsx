@@ -7,7 +7,7 @@ const Contact = () => {
   const workerUrl = import.meta.env.VITE_TURNSTILE_WORKER_URL;
 
   return (
-    <div className="bg-amber-200 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
+    <div className="bg-amber-50 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
       <HorizontalNav colorName="amber" />
       <VerticalNav colorName="amber" />
       <div className="flex flex-col pt-8 md:pt-20 h-full min-h-screen w-11/12 md:w-180 lg:w-256 xl:w-300">

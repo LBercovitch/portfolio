@@ -15,7 +15,7 @@ function CountryQuiz() {
   }, [gameState]);
 
   return (
-    <div className="bg-violet-200 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
+    <div className="bg-violet-50 grid place-items-center h-full min-h-screen font-josefin-sans text-2xl">
       <HorizontalNav colorName="violet" />
       <VerticalNav colorName="violet" />
       <div className="flex flex-col h-full min-h-screen w-11/12 md:w-180 lg:w-256 xl:w-300">

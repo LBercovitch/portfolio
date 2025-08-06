@@ -1,13 +1,13 @@
-function Loader({ bgColor, spinnerArc }) {
+function Loader({ bgColor, spinnerColor }) {
   return (
-    <div className={`${bgColor} flex justify-center w-full relative`}>
+    <div className={`${bgColor} flex justify-center items-center w-full h-full relative`}>
       <div
-        className={`rounded-full ${spinnerArc} h-48 w-48`}
+        className={`rounded-full ${spinnerColor} h-48 w-48`}
         role="status"
         aria-label="Loading"
       />
       <div
-        className={`absolute rounded-full ${bgColor} h-36 w-36 z-10 top-6`}
+        className={`absolute rounded-full ${bgColor} h-36 w-36 z-10`}
         role="status"
         aria-label="Loading"
       />

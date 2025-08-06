@@ -174,13 +174,13 @@
 }
 
 /***** Spinner *****/
-@keyframes spinSweep {
+@keyframes spin {
   from {transform: rotate(0turn)}
   to {transform: rotate(1turn)}
 }
 
-@utility spinner-arc-* {
-  background: conic-gradient(transparent, var(--arc-color));
-  animation: spinSweep 2s linear infinite;
-  --arc-color: --value([color]);
+@utility spinner-* {
+  background: conic-gradient(transparent, var(--spin-color));
+  animation: spin 2s linear infinite;
+  --spin-color: --value([color]);
 }
