@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom'
 import navItems from './nav-items.json';
 import colorMap from './color-map.json';
 import MenuButton from './menu-button';
+import VerticalDropDown from './vertical-drop-down';
 
 function VerticalNav({ colorName }) {
   const [menuActive, setMenuActive] = useState(false);
   const bgColorCSS = colorMap[colorName].bg;
   const bgHoverColorCSS = colorMap[colorName].bgHover;
   const bgVertMenuColorCSS = colorMap[colorName].bgVertMenu;
+  const bgDarkCSS = colorMap[colorName].bgDark;
 
   return (
     <nav
@@ -39,15 +41,33 @@ function VerticalNav({ colorName }) {
       {menuActive && <div 
         className={`fixed left-0 top-24 z-10 flex flex-col items-center w-full h-full ${bgVertMenuColorCSS}`}
       >
-        {navItems.map(({ id, name, route }) => (
-          <Link
-            key={id}
-            to={route}
-            className={`flex items-center justify-center text-center font-josefin-sans text-gray-800
-              w-full text-5xl py-6 ${bgHoverColorCSS}`}
-          >
-            {name}
-          </Link>
+        {/* {navItems.map(({ id, name, route }) => ( */}
+          {/* // <Link
+          //   key={id}
+          //   to={route}
+          //   className={`flex items-center justify-center text-center font-josefin-sans text-gray-800
+          //     w-full text-5xl py-6 ${bgHoverColorCSS}`}
+          // >
+          //   {name}
+          // </Link> */}
+        {navItems.map(({ id, name, route, expands }) => (
+          expands ?
+            <VerticalDropDown
+              key={id}
+              name={name}
+              expands={expands}
+              bgColorCSS={bgColorCSS}
+              bgHoverColorCSS={bgHoverColorCSS}
+              bgDarkCSS={bgDarkCSS}
+            /> :
+            <Link
+              key={id}
+              to={route}
+              className={`flex items-center justify-center text-center font-josefin-sans text-gray-800
+                w-full text-5xl py-6 ${bgHoverColorCSS}`}
+            >
+              {name}
+            </Link>
         ))}
       </div>}
     </nav>

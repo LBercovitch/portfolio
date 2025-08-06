@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 
 import { GeoJSON } from 'ol/format';
 import Style from 'ol/style/Style';
@@ -9,10 +9,12 @@ import MapFrame from '../map/map-frame';
 import countries from '../../data/countries.geo.json';
 
 function GameMap({ guess, setGuess, mapFeatures, setMapFeatures, correctCountries, setCorrectCountries, setGuessMessage }) {
-  const format = new GeoJSON();
-  const features = format.readFeatures(countries, {
-    featureProjection: 'EPSG:3857', // Standard Web Mercator projection
-  });
+  const features = useMemo(() => {
+    const format = new GeoJSON();
+    return format.readFeatures(countries, {
+      featureProjection: 'EPSG:3857',
+    });
+  }, []);
 
   const randomColor = () => {
     const red = (Math.trunc(Math.random() * 255)).toString(16).padStart(2, '0');

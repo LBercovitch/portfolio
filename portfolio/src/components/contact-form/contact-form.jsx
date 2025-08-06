@@ -90,6 +90,7 @@ const ContactForm = ({siteKey, workerUrl}) => {
         className="self-center border-2 border-gray-800 rounded-lg bg-white pt-1.5 shadow-[7px_7px_#ffb900] mt-5"
       ></div>
 
+      {status && <p className="mt-2 w-full text-center font-josefin-sans-bold text-4xl">{status}</p>}
       <button
         type="submit"
         className="self-center my-5 bg-amber-300 rounded-full border-gray-800
@@ -99,8 +100,6 @@ const ContactForm = ({siteKey, workerUrl}) => {
       >
         Send
       </button>
-
-      {status && <p className="mt-2 self-center">{status}</p>}
     </form>
   );
 };

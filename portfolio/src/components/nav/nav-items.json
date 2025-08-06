@@ -6,6 +6,36 @@
   }, {
     "name": "Projects",
     "id": "projects",
+    "expands": [
+      {
+        "name": "All Projects",
+        "id": "all",
+        "route": "/projects"
+      },
+      {
+        "name": "198",
+        "id": "198",
+        "route": "/projects/country-quiz"
+      },
+      {
+        "name": "App.geo.ca",
+        "id": "appgeoca",
+        "route": "https://app.geo.ca/",
+        "external": true
+      },
+      {
+        "name": "CGP Pygeoapi",
+        "id": "pygeoapi",
+        "route": "https://github.com/Canadian-Geospatial-Platform/cgp_pygeoapi",
+        "external": true
+      },
+      {
+        "name": "EMSA-CASM",
+        "id": "emsa",
+        "route": "https://emsa-casm.ca/",
+        "external": true
+      }
+    ],
     "route": "/projects"
   }, {
     "name": "Contact",

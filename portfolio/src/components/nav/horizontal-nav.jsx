@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import navItems from './nav-items.json';
 import colorMap from './color-map.json';
+import HorizontalDropDown from './horizontal-drop-down';
 
 function HorizontalNav({colorName}) {
   const bgColorCSS = colorMap[colorName].bg;
   const bgHoverColorCSS = colorMap[colorName].bgHover;
+  const bgDarkCSS = colorMap[colorName].bgDark;
 
   return (
     <nav
@@ -24,15 +26,24 @@ function HorizontalNav({colorName}) {
         </Link>
       </div>
       <div className="flex h-full">
-        {navItems.map(({ id, name, route }) => (
-          <Link
-            key={id}
-            to={route}
-            className={`h-full flex items-center font-josefin-sans text-gray-800 ${bgHoverColorCSS}
-              text-center text-4xl px-6 py-3 xl:text-5xl xl:px-8 xl:py-4`}
-          >
-            {name}
-          </Link>
+        {navItems.map(({ id, name, route, expands }) => (
+          expands ?
+            <HorizontalDropDown
+              key={id}
+              name={name}
+              expands={expands}
+              bgColorCSS={bgColorCSS}
+              bgHoverColorCSS={bgHoverColorCSS}
+              bgDarkCSS={bgDarkCSS}
+            /> :
+            <Link
+              key={id}
+              to={route}
+              className={`h-full flex items-center font-josefin-sans text-gray-800 ${bgHoverColorCSS}
+                text-center text-4xl px-6 py-3 xl:text-5xl xl:px-8 xl:py-4`}
+            >
+              {name}
+            </Link>
         ))}
       </div>
     </nav>
