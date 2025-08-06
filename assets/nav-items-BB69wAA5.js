@@ -1,1 +1,0 @@
-const t=[{name:"About",id:"about",route:"/about"},{name:"Projects",id:"projects",route:"/projects"},{name:"Contact",id:"contact",route:"/contact"}];export{t as n};
